@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG&family=Sora:wght@100..800&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+margin: 0;
+padding: 0;
+background-image: url(/media/Fundo\ 4.jpg);
+background-size: 100% 130%;
+background-repeat: no-repeat;
+
+}
+header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 3;
+    margin-bottom: 20px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background: linear-gradient(to bottom,#f9cd5a, #292211);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    background-color: transparent;
+}
+
+section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 21px;
+}
+video{
+    margin: 2em 0;
+    width: 100%;
+}
+.whatsapp-btn {
+
+    display: inline-block;
+    background-color:#2bff00 ;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+}
+
+.whatsapp-btn i {
+    margin-right:  5px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #008d18;
+}
+
+.social-media-buttons {
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    position: fixed; /* Define a posição como fixa */
+    bottom: 10px; /* Ajusta a distância da parte inferior */
+    right: 20px; /* Ajusta a distância da direita */
+    display: flex; /* Para melhor organização dos botões */
+    flex-direction: column; /* Organiza os botões em coluna */
+    z-index: 999; /* Garante que os botões fiquem acima de outros elementos */
+  }
+
+  .social-media-buttons a {
+    display: inline-block; /* Torna os links elementos de bloco inline */
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+    padding: 20px; /* Adiciona preenchimento aos botões */
+    border-radius: 50%; /* Deixa os botões redondos */
+    background-color: hsl(120, 73%, 41%); /* Cor de fundo dos botões */
+    color: #ffffff; /* Cor do ícone */
+    text-decoration: none; /* Remove a decoração do link */
+  }
+
+  .social-media-buttons i {
+    font-size: 35px; /* Tamanho do ícone */
+  }
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Estilos para telas com largura máxima de 1200px */
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Estilos para telas com largura máxima de 992px */
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para telas com largura máxima de 768px */
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+
+  }
+  
+@media (max-width: 480px) {
+    /* Mobile styles */
+    h1 {
+      margin-bottom: px;
+      font-size: 42px;
+    }
+    h2{
+        margin-top: -150px;
+    }
+    .social-media-buttons {
+        display: none;
+    }
+}
